@@ -19,5 +19,13 @@ public class HomeController : Controller
         return BD.ObtenerTemporadas(idSerie);
     }
 
+    public List<Actor> VerActores(int idSerie){
+        return BD.ObtenerActores(idSerie);
+    }
+
+    public Serie? VerInfo(int idSerie){
+        return BD.ObtenerSerie(idSerie);
+    }
+
 
 }
